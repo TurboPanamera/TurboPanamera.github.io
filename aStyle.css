@@ -1,0 +1,137 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {/*网页背景*/
+    background-color: #ffffff;
+}
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrapper {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    margin: 0px auto;
+}
+.heading {/*标题栏色块*/
+    margin: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    margin: 0px auto;
+}
+.head_navg { /*导航栏框？*/
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+    height: 30px;
+    position: relative; /*生成相对定位的元素，相对于其正常位置进行定位*/
+}
+.head_title { /*大标题*/
+    float: left; /*向左浮动*/
+    font-family: 微软雅黑;
+    font-size: 25px;
+    color: #FF6F26;
+    margin-top: -5px;
+    margin-left: 15px;
+    line-height: 30px;
+}
+.head_navgbar { /*列表-导航栏*/
+    margin-left: 20px;
+    display: inline;
+}
+.head_ul {
+    margin-left: 40px;
+    float: left;
+    list-style-type: none;
+    padding-bottom: 6px;
+}
+.head_href:link, .head_href:visited { /*超链接a标签*/
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.head_href:hover, .head_href:active { /*a标签hover */
+    color: #ADADAD;
+}
+.head_profile { /*头像*/
+    border-radius: 50%;
+    border: none;
+    display: block;
+    /*box-shadow: 0px,1px,1px,black;*/
+    position: absolute;
+    top: 50%;
+    left: 92%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    /*margin-right: -100px;
+    top: -5px;*/
+}
+.head_inputbox {
+    float: right;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    /*margin-right: 250px;
+    margin-top: -10px;
+    margin-left: auto;*/
+}
+
+form input {
+    height: 26px;
+    border-radius: 5px;
+}
+.main_page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100%;
+    text-align: center;
+}
+.main_ul {
+    
+    list-style-type: none;
+    padding-bottom: 6px;
+    
+}
+.main_li {
+    
+    margin-right: 20px;
+    display: inline-block;
+}
+.main_button {
+    opacity: 0;
+    width: 340px;
+    height: 65px;
+    border: 2px solid #333333;
+    border-radius: 26px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    color: #333333;
+    font-size: 25px;
+    font-family: 微软雅黑;
+    line-height: 65px;
+    cursor: pointer;
+    transition-property: opacity,color,border-color;
+    transition-delay: 1000ms,0;
+    transition-duration: 800ms,500ms; /*达到缓慢消失效果*/
+}
+.main_page:hover .main_button {
+    /*text-align: center;*/
+    opacity: 1.0; /*透明度1.0-0.0*/
+}
+.main_href:link, .main_href:visited { /*超链接a标签*/
+    padding: 20px 40px 20px 40px;
+    text-decoration: none;
+}
+.main_href:hover { /*a标签hover */
+    color: #ADADAD;
+    border-color: #ADADAD;
+}

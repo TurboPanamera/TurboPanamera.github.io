@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GameWallPaper | 记录游戏精彩瞬间</title>
+    <link rel="stylesheet" type="text/css" href="aStyle.css">
+    <style>
+        .img {
+            /*vertical-align:middle;*/
+            
+            width: 150px;
+            margin-top: 100px;
+            top: 50%;
+            left: 50%;
+        }
+
+        html:hover .img {
+            animation-name: test;
+            animation-delay: 1000ms;
+            animation-duration: 800ms;
+            animation-fill-mode: forwards;
+            /*更加简洁的transition动效
+            transition-delay: 100ms;
+            transition-duration: 800ms;
+            width: 60px;
+            margin-top: 0px;*/
+        }
+        .class1 {
+            /*color: #333333;*/
+            text-align: center;
+            font-family: 微软雅黑;
+            font-size: 60px;
+            
+        }
+        html:hover .class1 {
+            /*color: #333333;*/
+            text-align: center;
+            font-family: 微软雅黑;
+            font-size: 60px;
+            opacity: 0; /*透明度1.0-0.0*/
+            transition-delay: 1000ms;
+            transition-duration: 800ms; /*达到缓慢消失效果*/
+        }
+
+        .div {
+            text-align: center;
+        }
+
+        .class1 {
+            color: #333333;
+            font-family: 微软雅黑;
+            font-size: 60px;
+            /*text-shadow: 1px 1px 2px black;*/
+        }
+
+        @keyframes test {
+
+            to { /*结束帧*/
+                width: 60px;
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="heading">
+                <div class="head_navg">
+                    <div class="head_title">
+                        GameWallPaper
+                    </div>
+                    <div>
+                        <ul class=".head_ul">
+                            <li class="head_navgbar"><a href="#" class="head_href" style="font-size:20px; ">首页</a></li>
+                            <li class="head_navgbar"><a href="#" class="head_href" style="font-size:20px;">作品展示</a></li>
+                            <li class="head_navgbar"><a href="#" class="head_href" style="font-size:20px;">帮助</a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="head_image">
+                        <a href="GameWallPaper_login.html">
+                            <img width="36px" height="36px" class="head_profile" src="profile.png">
+                        </a>
+                    </div>
+                    <div class="head_inputbox">
+                        <form>
+                            <input type="text">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="body"></div>
+        </div>
+    </div>
+    <div class="main_page">
+        <img src="app.png" class="img"></img>
+        <p class="class1">欢迎来到主页</p>
+        <p class="class1" style=" color :#FF6F26">welcome</p>
+        <div>
+            <ul class="main_ul">
+                <li class="main_li"><a href="#" class="main_button main_href">进入网站</a></li>
+                <li class="main_li"><a href="GameWallPaper_login.html" class="main_button main_href">用户登录</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
